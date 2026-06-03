@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ゼッツスペック比較サイト</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 50px;
+        }
+        .panel{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>ゼッツスペック比較サイト</h1>
+
+<h2>ライダー、フォームを選択</h2>
+<select id="leftSelect">
+    <option value="0" selected>ゼッツ インパクト</option>
+    <option value="1">ノクス</option>
+    <option value="2">ドォーン</option>
+</select>
+
+<select id="rightSelect">
+    <option value="0">ゼッツ インパクト</option>
+    <option value="1" selected>ノクス</option>
+    <option value="2">ドォーン</option>
+</select>
+<div class="container">
+<div id="leftpanel" class="panel">
+    <h3>比較1</h3>
+
+    <p>名称:<span id="leftName"></span></p>
+    <p>身長:<span id="leftHeight"></span></p>
+    <p>体重:<span id="leftWeight"></span></p>
+    <p>パンチ力:<span id="leftPunch"></span></p>
+    <p>キック力:<span id="leftKick"></span></p>
+    <p>ジャンプ力(ひと跳び):<span id="leftJump"></span></p>
+    <p>走力(100m):<span id="leftrunning"></span></p>
+</div>
+<div id="rightpanel" class="panel">
+    <h3>比較2</h3>
+
+    <p>名称:<span id="rightName"></span></p>
+    <p>身長:<span id="rightHeight"></span></p>
+    <p>体重:<span id="rightWeight"></span></p>
+    <p>パンチ力:<span id="rightPunch"></span></p>
+    <p>キック力:<span id="rightKick"></span></p>
+    <p>ジャンプ力(ひと跳び):<span id="rightJump"></span></p>
+    <p>走力(100m):<span id="rightrunning"></span></p>
+</div>
+
+<script>
+const riders = [
+    {
+        name: "ゼッツ インパクト",
+        height: 194.9,
+        weight: 80.5,
+        punch: 8.1,
+        kick: 16.2,
+        jump: 9.8,
+        running: 7.6
+    },
+    {
+        name: "ノクス",
+        height: 196.4,
+        weight: 87.9,
+        punch: 15.7,
+        kick: 28.1,
+        jump: 16.0,
+        running: 4.5
+    }
+    ,
+    {
+        name: "ドォーン",
+        height: 198.7,
+        weight: 82.3,
+        punch: 24.9,
+        kick: 49.8,
+        jump: 25.5,
+        running: 1.8
+    }
+];
+const rider1 = riders[0];
+document.getElementById("leftName").textContent = rider1.name;
+document.getElementById("leftHeight").textContent = rider1.height.toFixed(1) + "cm";
+document.getElementById("leftWeight").textContent = rider1.weight.toFixed(1) + "kg";
+document.getElementById("leftPunch").textContent = rider1.punch.toFixed(1) + "t";    
+document.getElementById("leftKick").textContent = rider1.kick.toFixed(1) + "t";
+document.getElementById("leftJump").textContent = rider1.jump.toFixed(1) + "m";
+document.getElementById("leftrunning").textContent = rider1.running.toFixed(1) + "秒";
+const rider2 = riders[1];
+document.getElementById("rightName").textContent = rider2.name;
+document.getElementById("rightHeight").textContent = rider2.height.toFixed(1) + "cm";
+document.getElementById("rightWeight").textContent = rider2.weight.toFixed(1) + "kg";
+document.getElementById("rightPunch").textContent = rider2.punch.toFixed(1) + "t";
+document.getElementById("rightKick").textContent = rider2.kick.toFixed(1) + "t";
+document.getElementById("rightJump").textContent = rider2.jump.toFixed(1) + "m";
+document.getElementById("rightrunning").textContent = rider2.running.toFixed(1) + "秒";
+document.getElementById("leftSelect").addEventListener("change", function() {
+    const selectedIndex = this.value;
+    const selectedRider = riders[selectedIndex];
+    document.getElementById("leftName").textContent = selectedRider.name;
+    document.getElementById("leftHeight").textContent = selectedRider.height.toFixed(1) + "cm";
+    document.getElementById("leftWeight").textContent = selectedRider.weight.toFixed(1) + "kg";
+    document.getElementById("leftPunch").textContent = selectedRider.punch.toFixed(1) + "t";    
+    document.getElementById("leftKick").textContent = selectedRider.kick.toFixed(1) + "t";
+    document.getElementById("leftJump").textContent = selectedRider.jump.toFixed(1) + "m";
+    document.getElementById("leftrunning").textContent = selectedRider.running.toFixed(1) + "秒";
+});
+document.getElementById("rightSelect").addEventListener("change", function() {
+    const selectedIndex = this.value;
+    const selectedRider = riders[selectedIndex];
+    document.getElementById("rightName").textContent = selectedRider.name;
+    document.getElementById("rightHeight").textContent = selectedRider.height.toFixed(1) + "cm";
+    document.getElementById("rightWeight").textContent = selectedRider.weight.toFixed(1) + "kg";
+    document.getElementById("rightPunch").textContent = selectedRider.punch + "t";
+    document.getElementById("rightKick").textContent = selectedRider.kick + "t";
+    document.getElementById("rightJump").textContent = selectedRider.jump.toFixed(1) + "m";
+    document.getElementById("rightrunning").textContent = selectedRider.running.toFixed(1) + "秒";
+});
+</script>
+</body>
+</html>
