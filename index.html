@@ -34,24 +34,52 @@
 <div id="leftpanel" class="panel">
     <h3>比較1</h3>
 
-    <p>名称:<span id="leftName"></span></p>
-    <p>身長:<span id="leftHeight"></span></p>
-    <p>体重:<span id="leftWeight"></span></p>
-    <p>パンチ力:<span id="leftPunch"></span></p>
-    <p>キック力:<span id="leftKick"></span></p>
-    <p>ジャンプ力(ひと跳び):<span id="leftJump"></span></p>
-    <p>走力(100m):<span id="leftrunning"></span></p>
+    <p class="row"><span class = "label"> 名称:</span>
+    <span class = "value" id="leftName"></span>
+    </p>
+    <p class="row"><span class = "label"> 身長:</span>
+    <span class = "value" id="leftHeight"></span>
+    </p>
+    <p class="row"><span class = "label"> 体重:</span>
+    <span class = "value" id="leftWeight"></span>
+    </p>
+    <p class="row"><span class = "label"> パンチ力:</span>
+    <span class = "value" id="leftPunch"></span>
+    </p>
+    <p class="row"><span class = "label"> キック力:</span>
+    <span class = "value" id="leftKick"></span>
+    </p>
+    <p class="row"><span class = "label"> ジャンプ力(ひと跳び):</span>
+    <span class = "value" id="leftJump"></span>
+    </p>
+    <p class="row"><span class = "label"> 走力(100m):</span>
+    <span class = "value" id="leftrunning"></span>
+    </p>
 </div>
 <div id="rightpanel" class="panel">
     <h3>比較2</h3>
 
-    <p>名称:<span id="rightName"></span></p>
-    <p>身長:<span id="rightHeight"></span></p>
-    <p>体重:<span id="rightWeight"></span></p>
-    <p>パンチ力:<span id="rightPunch"></span></p>
-    <p>キック力:<span id="rightKick"></span></p>
-    <p>ジャンプ力(ひと跳び):<span id="rightJump"></span></p>
-    <p>走力(100m):<span id="rightrunning"></span></p>
+    <p class="row"><span class = "label"> 名称:</span>
+    <span class = "value" id="rightName"></span>
+    </p>
+    <p class="row"><span class = "label"> 身長:</span>
+    <span class = "value" id="rightHeight"></span>
+    </p>
+    <p class="row"><span class = "label"> 体重:</span>
+    <span class = "value" id="rightWeight"></span>
+    </p>
+    <p class="row"><span class = "label"> パンチ力:</span>
+    <span class = "value" id="rightPunch"></span>
+    </p>
+    <p class="row"><span class = "label"> キック力:</span>
+    <span class = "value" id="rightKick"></span>
+    </p>
+    <p class="row"><span class = "label"> ジャンプ力(ひと跳び):</span>
+    <span class = "value" id="rightJump"></span>
+    </p>
+    <p class="row"><span class = "label"> 走力(100m):</span>
+    <span class = "value" id="rightrunning"></span>
+    </p>
 </div>
 
 <script>
@@ -118,8 +146,8 @@ document.getElementById("rightSelect").addEventListener("change", function() {
     document.getElementById("rightName").textContent = selectedRider.name;
     document.getElementById("rightHeight").textContent = selectedRider.height.toFixed(1) + "cm";
     document.getElementById("rightWeight").textContent = selectedRider.weight.toFixed(1) + "kg";
-    document.getElementById("rightPunch").textContent = selectedRider.punch + "t";
-    document.getElementById("rightKick").textContent = selectedRider.kick + "t";
+    document.getElementById("rightPunch").textContent = selectedRider.punch.toFixed(1) + "t";
+    document.getElementById("rightKick").textContent = selectedRider.kick.toFixed(1) + "t";
     document.getElementById("rightJump").textContent = selectedRider.jump.toFixed(1) + "m";
     document.getElementById("rightrunning").textContent = selectedRider.running.toFixed(1) + "秒";
 });
