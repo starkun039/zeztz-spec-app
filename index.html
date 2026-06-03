@@ -30,6 +30,7 @@
 <h1>ゼッツスペック比較サイト</h1>
 
 <h2>ライダー、フォームを選択</h2>
+<h4>*計測不能の場合は空白で表示されます*</h4>
 <select id="leftSelect">
     <option value="0" selected>ゼッツ インパクト</option>
     <option value="1">ノクス</option>
@@ -45,7 +46,7 @@
 </select>
 <div class="container">
 <div id="leftpanel" class="panel">
-    <h3>比較1</h3>
+    <h4>比較1</h4>
 
     <p class="row"><span class = "label"> 名称:</span>
     <span class = "value" id="leftName"></span>
@@ -70,7 +71,7 @@
     </p>
 </div>
 <div id="rightpanel" class="panel">
-    <h3>比較2</h3>
+    <h4>比較2</h4>
 
     <p class="row"><span class = "label"> 名称:</span>
     <span class = "value" id="rightName"></span>
@@ -175,6 +176,5 @@ document.getElementById("rightSelect").addEventListener("change", function() {
     document.getElementById("rightrunning").textContent = selectedRider.running.toFixed(1) + "秒";
 });
 </script>
-<h4>*計測不能の場合は空白で表示されます*</h4>
 </body>
 </html>
