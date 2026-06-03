@@ -7,7 +7,7 @@
     <style>
         .container {
             display: flex;
-            gap: 50px;
+            gap: 20px;
         }
         .row {
             display: flex;
@@ -21,7 +21,7 @@
             white-space: nowrap;
         }
         .panel{
-            width: 300px;
+            width: 200px;
         }
     </style>
 </head>
@@ -34,12 +34,14 @@
     <option value="0" selected>ゼッツ インパクト</option>
     <option value="1">ノクス</option>
     <option value="2">ドォーン</option>
+    <option value="3">ゼッツ プラズマ</option>
 </select>
 
 <select id="rightSelect">
     <option value="0">ゼッツ インパクト</option>
     <option value="1" selected>ノクス</option>
     <option value="2">ドォーン</option>
+    <option value="3">ゼッツ プラズマ</option>
 </select>
 <div class="container">
 <div id="leftpanel" class="panel">
@@ -123,6 +125,16 @@ const riders = [
         jump: 25.5,
         running: 1.8
     }
+    ,
+    {
+        name: "ゼッツ プラズマ",
+        height: 194.9,
+        weight: 80.5,
+        punch: 10.8,
+        kick: 19.6,
+        jump: 15.5,
+        running: 3.6
+    }
 ];
 const rider1 = riders[0];
 document.getElementById("leftName").textContent = rider1.name;
@@ -163,5 +175,6 @@ document.getElementById("rightSelect").addEventListener("change", function() {
     document.getElementById("rightrunning").textContent = selectedRider.running.toFixed(1) + "秒";
 });
 </script>
+<h4>*計測不能の場合は空白で表示されます*</h4>
 </body>
 </html>
