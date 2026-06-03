@@ -33,16 +33,22 @@
 <h4>*計測不能の場合は空白で表示されます*</h4>
 <select id="leftSelect">
     <option value="0" selected>ゼッツ インパクト</option>
+    <option value="3">ゼッツ プラズマ</option>
+    <option value="4">ゼッツ カタストロム</option>
+    <option value="5">ゼッツ オルデルム</option>
+    <option value="6">ゼッツ エクスドリーム</option>
     <option value="1">ノクス</option>
     <option value="2">ドォーン</option>
-    <option value="3">ゼッツ プラズマ</option>
 </select>
 
 <select id="rightSelect">
     <option value="0">ゼッツ インパクト</option>
-    <option value="1" selected>ノクス</option>
-    <option value="2">ドォーン</option>
     <option value="3">ゼッツ プラズマ</option>
+    <option value="4">ゼッツ カタストロム</option>
+    <option value="5">ゼッツ オルデルム</option>
+    <option value="6" selected>ゼッツ エクスドリーム</option>
+    <option value="1">ノクス</option>
+    <option value="2">ドォーン</option>
 </select>
 <div class="container">
 <div id="leftpanel" class="panel">
@@ -136,6 +142,36 @@ const riders = [
         jump: 15.5,
         running: 3.6
     }
+    ,
+    {
+        name: "ゼッツ カタストロム",
+        height: 197.0,
+        weight: 99.8,
+        punch: 24.5,
+        kick: 40.2,
+        jump: 22.7,
+        running: 2.0
+    }
+    ,
+    {
+        name: "ゼッツ オルデルム",
+        height: 198.0,
+        weight: 91.5,
+        punch: 18.6,
+        kick: 29.6,
+        jump: 24.1,
+        running: 1.9
+    }
+    ,
+    {
+        name: "ゼッツ エクスドリーム",
+        height: 194.9,
+        weight: 85.7,
+        punch: 24.4,
+        kick: 40.1,
+        jump: 25.3,
+        running: 1.9
+    }
 ];
 const rider1 = riders[0];
 document.getElementById("leftName").textContent = rider1.name;
@@ -145,7 +181,7 @@ document.getElementById("leftPunch").textContent = rider1.punch.toFixed(1) + "t"
 document.getElementById("leftKick").textContent = rider1.kick.toFixed(1) + "t";
 document.getElementById("leftJump").textContent = rider1.jump.toFixed(1) + "m";
 document.getElementById("leftrunning").textContent = rider1.running.toFixed(1) + "秒";
-const rider2 = riders[1];
+const rider2 = riders[6];
 document.getElementById("rightName").textContent = rider2.name;
 document.getElementById("rightHeight").textContent = rider2.height.toFixed(1) + "cm";
 document.getElementById("rightWeight").textContent = rider2.weight.toFixed(1) + "kg";
