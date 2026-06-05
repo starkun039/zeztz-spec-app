@@ -30,24 +30,48 @@
 <h1>ゼッツスペック比較サイト</h1>
 
 <h2>ライダー、フォームを選択</h2>
-<h4>*計測不能の場合は空白で表示されます*</h4>
+<h4>*計測不能の場合は０と表示されます*</h4>
 <select id="leftSelect">
     <option value="0" selected>ゼッツ インパクト</option>
+    <option value="7">ゼッツ トランスフォーム</option>
+    <option value="8">ゼッツ ウィング</option>
+    <option value="9">ゼッツ ストリーム</option>
+    <option value="10">ゼッツ マシーナリー</option>
+    <option value="11">ゼッツ プロジェクション</option>
+    <option value="12">ゼッツ リカバリー</option>
+    <option value="13">ゼッツ バリア</option>
+    <option value="14">ゼッツ ワンダー</option>
+    <option value="15">ゼッツ グラビティ</option>
     <option value="3">ゼッツ プラズマ</option>
+    <option value="16">ゼッツ ブースター</option>
     <option value="4">ゼッツ カタストロム</option>
     <option value="5">ゼッツ オルデルム</option>
     <option value="6">ゼッツ エクスドリーム</option>
     <option value="1">ノクス</option>
+    <option value="17">ノクス ガン</option>
+    <option value="18">ノクス ウルフ</option>
     <option value="2">ドォーン</option>
 </select>
 
 <select id="rightSelect">
     <option value="0">ゼッツ インパクト</option>
+    <option value="7">ゼッツ トランスフォーム</option>
+    <option value="8">ゼッツ ウィング</option>
+    <option value="9">ゼッツ ストリーム</option>
+    <option value="10">ゼッツ マシーナリー</option>
+    <option value="11">ゼッツ プロジェクション</option>
+    <option value="12">ゼッツ リカバリー</option>
+    <option value="13">ゼッツ バリア</option>
+    <option value="14">ゼッツ ワンダー</option>
+    <option value="15">ゼッツ グラビティ</option>
     <option value="3">ゼッツ プラズマ</option>
+    <option value="16">ゼッツ ブースター</option>
     <option value="4">ゼッツ カタストロム</option>
     <option value="5">ゼッツ オルデルム</option>
     <option value="6" selected>ゼッツ エクスドリーム</option>
     <option value="1">ノクス</option>
+    <option value="17">ノクス ガン</option>
+    <option value="18">ノクス ウルフ</option>
     <option value="2">ドォーン</option>
 </select>
 <div class="container">
@@ -171,6 +195,126 @@ const riders = [
         kick: 40.1,
         jump: 25.3,
         running: 1.9
+    }
+    ,
+    {
+        name: "ゼッツ トランスフォーム",
+        height: 0,
+        weight: 80.5,
+        punch: 6.8,
+        kick: 13.6,
+        jump: 7.5,
+        running: 10.5
+    }
+    ,
+    {
+        name: "ゼッツ ウィング",
+        height: 194.9,
+        weight: 82.7,
+        punch: 2.8,
+        kick: 9.5,
+        jump: 12.5,
+        running: 5.8
+    }
+    ,
+    {
+        name: "ゼッツ ストリーム",
+        height: 194.9,
+        weight: 80.5,
+        punch: 4.8,
+        kick: 8.2,
+        jump: 10.7,
+        running: 6.8
+    }
+    ,
+    {
+        name: "ゼッツ マシーナリー",
+        height: 194.9,
+        weight: 93.1,
+        punch: 6.5,
+        kick: 4.2,
+        jump: 6.4,
+        running: 11.2
+    }
+    ,
+    {
+        name: "ゼッツ プロジェクション",
+        height: 194.9,
+        weight: 83.6,
+        punch: 2.6,
+        kick: 5.3,
+        jump: 7.2,
+        running: 8.3
+    }
+    ,
+    {
+        name: "ゼッツ リカバリー",
+        height: 194.9,
+        weight: 80.5,
+        punch: 2.8,
+        kick: 5.7,
+        jump: 6.8,
+        running: 9.4
+    }
+    ,
+    {
+        name: "ゼッツ バリア",
+        height: 194.9,
+        weight: 86.6,
+        punch: 2.6,
+        kick: 5.3,
+        jump: 7.0,
+        running: 9.9
+    }
+    ,
+    {
+        name: "ゼッツ ワンダー",
+        height: 0,
+        weight: 0,
+        punch: 0,
+        kick: 0,
+        jump: 0,
+        running: 0
+    }
+    ,
+    {
+        name: "ゼッツ グラビティ",
+        height: 194.9,
+        weight: 90.5,
+        punch: 5.6,
+        kick: 5.3,
+        jump: 3.8,
+        running: 12.3
+    }
+    ,
+    {
+        name: "ゼッツ ブースター",
+        height: 194.9,
+        weight: 80.5,
+        punch: 11.2,
+        kick: 20.1,
+        jump: 16.8,
+        running: 3.1
+    }
+    ,
+    {
+        name: "ノクス ガン",
+        height: 196.4,
+        weight: 91.3,
+        punch: 10.9,
+        kick: 22.6,
+        jump: 11.9,
+        running: 5.2
+    }
+    ,
+    {
+        name: "ノクス ウルフ",
+        height: 196.4,
+        weight: 89.3,
+        punch: 13.8,
+        kick: 26.5,
+        jump: 18.3,
+        running: 4.1
     }
 ];
 const rider1 = riders[0];
