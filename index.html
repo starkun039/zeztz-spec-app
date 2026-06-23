@@ -147,7 +147,7 @@
 <script>
 const riders = [
     {
-        name: "ゼッツ インパクト",
+        name: "ゼッツ<br>インパクト",
         height: "194.9",
         weight: "80.5",
         punch: "8.1",
@@ -176,7 +176,7 @@ const riders = [
     }
     ,
     {
-        name: "ゼッツ プラズマ",
+        name: "ゼッツ<br>プラズマ",
         height: "194.9",
         weight: "80.5",
         punch: "10.8",
@@ -186,7 +186,7 @@ const riders = [
     }
     ,
     {
-        name: "ゼッツ カタストロム",
+        name: "ゼッツ<br>カタストロム",
         height: "197.0",
         weight: "99.8",
         punch: "24.5",
@@ -196,7 +196,7 @@ const riders = [
     }
     ,
     {
-        name: "ゼッツ オルデルム",
+        name: "ゼッツ<br>オルデルム",
         height: "198.0",
         weight: "91.5",
         punch: "18.6",
@@ -206,7 +206,7 @@ const riders = [
     }
     ,
     {
-        name: "ゼッツ エクスドリーム",
+        name: "ゼッツ<br>エクスドリーム",
         height: "194.9",
         weight: "85.7",
         punch: "24.4",
@@ -216,7 +216,7 @@ const riders = [
     }
     ,
     {
-        name: "ゼッツ トランスフォーム",
+        name: "ゼッツトランス<br>フォーム",
         height: "計測不能",
         weight: "80.5",
         punch: "6.8",
@@ -226,7 +226,7 @@ const riders = [
     }
     ,
     {
-        name: "ゼッツ ウィング",
+        name: "ゼッツ<br>ウィング",
         height: "194.9",
         weight: "82.7",
         punch: "2.8",
@@ -236,7 +236,7 @@ const riders = [
     }
     ,
     {
-        name: "ゼッツ ストリーム",
+        name: "ゼッツ<br>ストリーム",
         height: "194.9",
         weight: "80.5",
         punch: "4.8",
@@ -246,7 +246,7 @@ const riders = [
     }
     ,
     {
-        name: "ゼッツ マシーナリー",
+        name: "ゼッツ<br>マシーナリー",
         height: "194.9",
         weight: "93.1",
         punch: "6.5",
@@ -266,7 +266,7 @@ const riders = [
     }
     ,
     {
-        name: "ゼッツ リカバリー",
+        name: "ゼッツ <br>リカバリー",
         height: "194.9",
         weight: "80.5",
         punch: "2.8",
@@ -276,7 +276,7 @@ const riders = [
     }
     ,
     {
-        name: "ゼッツ バリア",
+        name: "ゼッツ<br>バリア",
         height: "194.9",
         weight: "86.6",
         punch: "2.6",
@@ -286,7 +286,7 @@ const riders = [
     }
     ,
     {
-        name: "ゼッツ ワンダー",
+        name: "ゼッツ<br>ワンダー",
         height: "計測不能",
         weight: "計測不能",
         punch: "計測不能",
@@ -296,7 +296,7 @@ const riders = [
     }
     ,
     {
-        name: "ゼッツ グラビティ",
+        name: "ゼッツ<br>グラビティ",
         height: "194.9",
         weight: "90.5",
         punch: "5.6",
@@ -306,7 +306,7 @@ const riders = [
     }
     ,
     {
-        name: "ゼッツ ブースター",
+        name: "ゼッツ<br>ブースター",
         height: "194.9",
         weight: "80.5",
         punch: "11.2",
@@ -316,7 +316,7 @@ const riders = [
     }
     ,
     {
-        name: "ノクス ガン",
+        name: "ノクス<br>ガン",
         height: "196.4",
         weight: "91.3",
         punch: "10.9",
@@ -326,7 +326,7 @@ const riders = [
     }
     ,
     {
-        name: "ノクス ウルフ",
+        name: "ノクス<br>ウルフ",
         height: "196.4",
         weight: "89.3",
         punch: "13.8",
@@ -366,7 +366,7 @@ const riders = [
     }
     ,
     {
-        name: "ロードスリーブースター",
+        name: "ロードスリー<br>ブースター",
         height: "197.0",
         weight: "75.5",
         punch: "16.3",
@@ -396,7 +396,7 @@ const riders = [
     }
 ];
 const rider1 = riders[0];
-document.getElementById("leftName").textContent = rider1.name;
+document.getElementById("leftName").innerHTML = rider1.name;
 document.getElementById("leftHeight").textContent = rider1.height + "cm";
 document.getElementById("leftWeight").textContent = rider1.weight + "kg";
 document.getElementById("leftPunch").textContent = rider1.punch + "t";
@@ -404,7 +404,7 @@ document.getElementById("leftKick").textContent = rider1.kick + "t";
 document.getElementById("leftJump").textContent = rider1.jump + "m";
 document.getElementById("leftrunning").textContent = rider1.running + "秒";
 const rider2 = riders[6];
-document.getElementById("rightName").textContent = rider2.name;
+document.getElementById("rightName").innerHTML = rider2.name;
 document.getElementById("rightHeight").textContent = rider2.height + "cm";
 document.getElementById("rightWeight").textContent = rider2.weight + "kg";
 document.getElementById("rightPunch").textContent = rider2.punch + "t";
@@ -414,7 +414,7 @@ document.getElementById("rightrunning").textContent = rider2.running + "秒";
 document.getElementById("leftSelect").addEventListener("change", function() {
     const selectedIndex = this.value;
     const selectedRider = riders[selectedIndex];
-    document.getElementById("leftName").textContent = selectedRider.name;
+    document.getElementById("leftName").innerHTML = selectedRider.name;
     document.getElementById("leftHeight").textContent = selectedRider.height + "cm";
     document.getElementById("leftWeight").textContent = selectedRider.weight + "kg";
     document.getElementById("leftPunch").textContent = selectedRider.punch + "t";
@@ -425,7 +425,7 @@ document.getElementById("leftSelect").addEventListener("change", function() {
 document.getElementById("rightSelect").addEventListener("change", function() {
     const selectedIndex = this.value;
     const selectedRider = riders[selectedIndex];
-    document.getElementById("rightName").textContent = selectedRider.name;
+    document.getElementById("rightName").innerHTML = selectedRider.name;
     document.getElementById("rightHeight").textContent = selectedRider.height + "cm";
     document.getElementById("rightWeight").textContent = selectedRider.weight + "kg";
     document.getElementById("rightPunch").textContent = selectedRider.punch + "t";
