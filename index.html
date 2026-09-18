@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -12,7 +13,7 @@
         .row {
             display: flex;
             justify-content: space-between;
-            align-items: center; 
+            align-items: center;
         }
         .label {
             width: 80px;
@@ -30,11 +31,11 @@
             align-items: center;
         }
         .panel img{
-        width: 180px;
-        height: 180px;
-        object-fit: contain;
-        display: block;
-        margin: 0 auto 10px;
+            width: 180px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 10px;
         }
     </style>
 </head>
@@ -101,62 +102,75 @@
     <option value="23">ロードファイブ</option>
     <option value="24">ロードシックス</option>
 </select>
+
 <div class="container">
-<div id="leftpanel" class="panel">
-    <h4>比較1</h4>
+    <div id="leftpanel" class="panel">
+        <h4>比較1</h4>
 
-    <img id="leftImage" src="" alt="画像">
+        <img id="leftImage" src="" alt="画像">
 
+        <p class="row"><span class="label">名称: </span>
+        <span class="value value-name" id="leftName"></span>
+        </p>
 
-    <p class="row"><span class = "label"> 名称: </span>
-    <span class = "value value-name" id="leftName"></span>
-    </p>
-    <p class="row"><span class = "label"> 身長:</span>
-    <span class = "value" id="leftHeight"></span>
-    </p>
-    <p class="row"><span class = "label"> 体重:</span>
-    <span class = "value" id="leftWeight"></span>
-    </p>
-    <p class="row"><span class = "label"> パンチ力:</span>
-    <span class = "value" id="leftPunch"></span>
-    </p>
-    <p class="row"><span class = "label"> キック力:</span>
-    <span class = "value" id="leftKick"></span>
-    </p>
-    <p class="row"><span class = "label"> ジャンプ力(ひと跳び):</span>
-    <span class = "value" id="leftJump"></span>
-    </p>
-    <p class="row"><span class = "label"> 走力(100m):</span>
-    <span class = "value" id="leftrunning"></span>
-    </p>
-</div>
-<div id="rightpanel" class="panel">
-    <h4>比較2</h4>
+        <p class="row"><span class="label">身長:</span>
+        <span class="value" id="leftHeight"></span>
+        </p>
 
-    <img id="rightImage" src="" alt="画像">
+        <p class="row"><span class="label">体重:</span>
+        <span class="value" id="leftWeight"></span>
+        </p>
 
+        <p class="row"><span class="label">パンチ力:</span>
+        <span class="value" id="leftPunch"></span>
+        </p>
 
-    <p class="row"><span class = "label"> 名称:</span>
-    <span class = "value value-name" id="rightName"></span>
-    </p>
-    <p class="row"><span class = "label"> 身長:</span>
-    <span class = "value" id="rightHeight"></span>
-    </p>
-    <p class="row"><span class = "label"> 体重:</span>
-    <span class = "value" id="rightWeight"></span>
-    </p>
-    <p class="row"><span class = "label"> パンチ力:</span>
-    <span class = "value" id="rightPunch"></span>
-    </p>
-    <p class="row"><span class = "label"> キック力:</span>
-    <span class = "value" id="rightKick"></span>
-    </p>
-    <p class="row"><span class = "label"> ジャンプ力(ひと跳び):</span>
-    <span class = "value" id="rightJump"></span>
-    </p>
-    <p class="row"><span class = "label"> 走力(100m):</span>
-    <span class = "value" id="rightrunning"></span>
-    </p>
+        <p class="row"><span class="label">キック力:</span>
+        <span class="value" id="leftKick"></span>
+        </p>
+
+        <p class="row"><span class="label">ジャンプ力(ひと跳び):</span>
+        <span class="value" id="leftJump"></span>
+        </p>
+
+        <p class="row"><span class="label">走力(100m):</span>
+        <span class="value" id="leftrunning"></span>
+        </p>
+    </div>
+
+    <div id="rightpanel" class="panel">
+        <h4>比較2</h4>
+
+        <img id="rightImage" src="" alt="画像">
+
+        <p class="row"><span class="label">名称:</span>
+        <span class="value value-name" id="rightName"></span>
+        </p>
+
+        <p class="row"><span class="label">身長:</span>
+        <span class="value" id="rightHeight"></span>
+        </p>
+
+        <p class="row"><span class="label">体重:</span>
+        <span class="value" id="rightWeight"></span>
+        </p>
+
+        <p class="row"><span class="label">パンチ力:</span>
+        <span class="value" id="rightPunch"></span>
+        </p>
+
+        <p class="row"><span class="label">キック力:</span>
+        <span class="value" id="rightKick"></span>
+        </p>
+
+        <p class="row"><span class="label">ジャンプ力(ひと跳び):</span>
+        <span class="value" id="rightJump"></span>
+        </p>
+
+        <p class="row"><span class="label">走力(100m):</span>
+        <span class="value" id="rightrunning"></span>
+        </p>
+    </div>
 </div>
 
 <script>
@@ -180,8 +194,7 @@ const riders = [
         kick: "28.1",
         jump: "16.0",
         running: "4.5"
-    }
-    ,
+    },
     {
         name: "ドォーン",
         image:"images/ドォーン.PNG",
@@ -191,8 +204,7 @@ const riders = [
         kick: "49.8",
         jump: "25.5",
         running: "1.8"
-    }
-    ,
+    },
     {
         name: "ゼッツ<br>プラズマ",
         image:"images/プラズマ.PNG",
@@ -202,8 +214,7 @@ const riders = [
         kick: "19.6",
         jump: "15.5",
         running: "3.6"
-    }
-    ,
+    },
     {
         name: "ゼッツ<br>カタストロム",
         image:"images/カタストロム.PNG",
@@ -213,8 +224,7 @@ const riders = [
         kick: "40.2",
         jump: "22.7",
         running: "2.0"
-    }
-    ,
+    },
     {
         name: "ゼッツ<br>オルデルム",
         image:"images/オルデルム.PNG",
@@ -224,8 +234,7 @@ const riders = [
         kick: "29.6",
         jump: "24.1",
         running: "1.9"
-    }
-    ,
+    },
     {
         name: "ゼッツ エクスドリーム",
         image:"images/エクスドリーム.PNG",
@@ -235,8 +244,7 @@ const riders = [
         kick: "40.1",
         jump: "25.3",
         running: "1.9"
-    }
-    ,
+    },
     {
         name: "ゼッツトランス<br>フォーム",
         image:"images/トランスフォーム.PNG",
@@ -246,8 +254,7 @@ const riders = [
         kick: "13.6",
         jump: "7.5",
         running: "10.5"
-    }
-    ,
+    },
     {
         name: "ゼッツ<br>ウィング",
         image:"images/ウィング.PNG",
@@ -257,8 +264,7 @@ const riders = [
         kick: "9.5",
         jump: "12.5",
         running: "5.8"
-    }
-    ,
+    },
     {
         name: "ゼッツ<br>ストリーム",
         image:"images/ストリーム.PNG",
@@ -268,8 +274,7 @@ const riders = [
         kick: "8.2",
         jump: "10.7",
         running: "6.8"
-    }
-    ,
+    },
     {
         name: "ゼッツ<br>マシーナリー",
         image:"images/マシーナリー.PNG",
@@ -279,8 +284,7 @@ const riders = [
         kick: "4.2",
         jump: "6.4",
         running: "11.2"
-    }
-    ,
+    },
     {
         name: "ゼッツ プロジェクション",
         image:"images/プロジェクション.PNG",
@@ -290,8 +294,7 @@ const riders = [
         kick: "5.3",
         jump: "7.2",
         running: "8.3"
-    }
-    ,
+    },
     {
         name: "ゼッツ <br>リカバリー",
         image:"images/リカバリー.PNG",
@@ -301,8 +304,7 @@ const riders = [
         kick: "5.7",
         jump: "6.8",
         running: "9.4"
-    }
-    ,
+    },
     {
         name: "ゼッツ<br>バリア",
         image:"images/バリア.PNG",
@@ -312,8 +314,7 @@ const riders = [
         kick: "5.3",
         jump: "7.0",
         running: "9.9"
-    }
-    ,
+    },
     {
         name: "ゼッツ<br>ワンダー",
         image:"images/ワンダー.PNG",
@@ -323,8 +324,7 @@ const riders = [
         kick: "計測不能",
         jump: "計測不能",
         running: "計測不能"
-    }
-    ,
+    },
     {
         name: "ゼッツ<br>グラビティ",
         image:"images/グラビティ.PNG",
@@ -334,8 +334,7 @@ const riders = [
         kick: "5.3",
         jump: "3.8",
         running: "12.3"
-    }
-    ,
+    },
     {
         name: "ゼッツ<br>ブースター",
         image:"images/ブースター.PNG",
@@ -345,8 +344,7 @@ const riders = [
         kick: "20.1",
         jump: "16.8",
         running: "3.1"
-    }
-    ,
+    },
     {
         name: "ノクス<br>ガン",
         image:"images/ガン.PNG",
@@ -356,8 +354,7 @@ const riders = [
         kick: "22.6",
         jump: "11.9",
         running: "5.2"
-    }
-    ,
+    },
     {
         name: "ノクス<br>ウルフ",
         image:"images/ウルフ.PNG",
@@ -367,8 +364,7 @@ const riders = [
         kick: "26.5",
         jump: "18.3",
         running: "4.1"
-    }
-    ,
+    },
     {
         name: "ノクス ミッドナイトシャドウ",
         image:"images/ミッドナイトシャドウ.PNG",
@@ -378,8 +374,7 @@ const riders = [
         kick: "36.8",
         jump: "23.2",
         running: "1.6"
-    }
-    ,
+    },
     {
         name: "ノクスナイト",
         image:"images/ノクスナイト.PNG",
@@ -389,19 +384,17 @@ const riders = [
         kick: "9.1",
         jump: "4.8",
         running: "7.5"
-    }
-    ,
+    },
     {
         name: "ロードスリー",
         image:"images/ロードスリー.PNG",
         height: "197.0",
-        weight: "74.3" ,
+        weight: "74.3",
         punch: "13.3",
         kick: "24.3",
         jump: "13.7",
         running: "4.8"
-    }
-    ,
+    },
     {
         name: "ロードスリー<br>ブースター",
         image:"images/ロードスリーブースター.PNG",
@@ -411,8 +404,7 @@ const riders = [
         kick: "30.5",
         jump: "17.1",
         running: "4.0"
-    }
-    ,
+    },
     {
         name: "ロードファイブ",
         image:"images/ロードファイブ.PNG",
@@ -422,8 +414,7 @@ const riders = [
         kick: "15.5",
         jump: "6.5",
         running: "6.8"
-    }
-    ,
+    },
     {
         name: "ロードシックス",
         image:"images/ロードシックス.PNG",
@@ -433,8 +424,7 @@ const riders = [
         kick: "10.6",
         jump: "12.3",
         running: "5.5"
-    }
-    ,
+    },
     {
         name: "ゼッツ ハートオブインパクト",
         image:"images/ハートオブインパクト.PNG",
@@ -446,10 +436,10 @@ const riders = [
         running: "4.4"
     }
 ];
+
 const rider1 = riders[0];
 
 document.getElementById("leftImage").src = rider1.image;
-
 document.getElementById("leftName").innerHTML = rider1.name;
 document.getElementById("leftHeight").textContent = rider1.height + "cm";
 document.getElementById("leftWeight").textContent = rider1.weight + "kg";
@@ -457,10 +447,10 @@ document.getElementById("leftPunch").textContent = rider1.punch + "t";
 document.getElementById("leftKick").textContent = rider1.kick + "t";
 document.getElementById("leftJump").textContent = rider1.jump + "m";
 document.getElementById("leftrunning").textContent = rider1.running + "秒";
+
 const rider2 = riders[6];
 
 document.getElementById("rightImage").src = rider2.image;
-
 document.getElementById("rightName").innerHTML = rider2.name;
 document.getElementById("rightHeight").textContent = rider2.height + "cm";
 document.getElementById("rightWeight").textContent = rider2.weight + "kg";
@@ -468,11 +458,12 @@ document.getElementById("rightPunch").textContent = rider2.punch + "t";
 document.getElementById("rightKick").textContent = rider2.kick + "t";
 document.getElementById("rightJump").textContent = rider2.jump + "m";
 document.getElementById("rightrunning").textContent = rider2.running + "秒";
+
 document.getElementById("leftSelect").addEventListener("change", function() {
     const selectedIndex = this.value;
     const selectedRider = riders[selectedIndex];
 
-    document.getElementById("leftImage").src=selectedRider.image;
+    document.getElementById("leftImage").src = selectedRider.image;
     document.getElementById("leftName").innerHTML = selectedRider.name;
     document.getElementById("leftHeight").textContent = selectedRider.height + "cm";
     document.getElementById("leftWeight").textContent = selectedRider.weight + "kg";
@@ -481,11 +472,12 @@ document.getElementById("leftSelect").addEventListener("change", function() {
     document.getElementById("leftJump").textContent = selectedRider.jump + "m";
     document.getElementById("leftrunning").textContent = selectedRider.running + "秒";
 });
+
 document.getElementById("rightSelect").addEventListener("change", function() {
     const selectedIndex = this.value;
     const selectedRider = riders[selectedIndex];
 
-    document.getElementById("rightImage").src=selectedRider.image;
+    document.getElementById("rightImage").src = selectedRider.image;
     document.getElementById("rightName").innerHTML = selectedRider.name;
     document.getElementById("rightHeight").textContent = selectedRider.height + "cm";
     document.getElementById("rightWeight").textContent = selectedRider.weight + "kg";
@@ -495,5 +487,6 @@ document.getElementById("rightSelect").addEventListener("change", function() {
     document.getElementById("rightrunning").textContent = selectedRider.running + "秒";
 });
 </script>
+
 </body>
 </html>
